@@ -24,3 +24,31 @@ if st.button("Добави книгата"):
 
     st.session_state.books.append(book)
     st.success("Книгата е добавена!")
+
+# ===========================
+# Покажи всички книги
+# ===========================
+if st.button(" Покажи всички книги"):
+
+    if len(st.session_state.books) == 0:
+        st.write("Няма добавени книги.")
+    else:
+        for book in st.session_state.books:
+            st.write("Заглавие:", book["title"])
+            st.write("Автор:", book["author"])
+            st.write("Цена:", book["price"])
+            st.write("--------------------")
+
+# ===========================
+# Покажи всички книги
+# ===========================
+if st.button(" Покажи всички книги"):
+
+    if len(st.session_state.books) == 0:
+        st.write("Няма добавени книги.")
+    else:
+        for book in st.session_state.books:
+            st.write("Заглавие:", book["title"])
+            st.write("Автор:", book["author"])
+            st.write("Цена:", book["price"])
+            st.write("--------------------")
